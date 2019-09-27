@@ -1,0 +1,44 @@
+
+@import url("https://fonts.google.com/specimen/Acme");
+img {
+width: 15%;
+}
+p {
+
+}
+.list-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #830A0A;
+}
+
+.list-li-a {
+  
+}
+
+
+
+
+.main-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #830A0A;
+}
+
+.main-li {
+  float: left;
+}
+.main-li-a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #DE6D2C;
+}
