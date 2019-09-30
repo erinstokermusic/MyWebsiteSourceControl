@@ -3,9 +3,12 @@
 img {
 width: 15%;
 }
-p {
-
+footer{
+  background-color: #81817E;
+  margin: 0;
+  padding: 0;
 }
+
 .list-ul {
   list-style-type: none;
   margin: 0;
@@ -47,7 +50,8 @@ li:last-child {
   text-decoration: none;
 }
 li a:hover {
-  background-color: #E8C317;
+  background-color: #FFF925;
+  color: black;
 }
 
 .active {
