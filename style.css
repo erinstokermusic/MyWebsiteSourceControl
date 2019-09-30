@@ -15,10 +15,17 @@ p {
 }
 
 .list-li-a {
-  
+  display: block;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid white;
 }
 
-
+li:last-child {
+  border-bottom: none;
+}
 
 
 .main-nav {
@@ -40,5 +47,14 @@ p {
   text-decoration: none;
 }
 li a:hover {
+  background-color: #E8C317;
+}
+
+.active {
   background-color: #DE6D2C;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
 }
