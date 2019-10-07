@@ -37,6 +37,9 @@ li:last-child {
   padding: 0;
   overflow: hidden;
   background-color: #830A0A;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .main-li {
@@ -49,7 +52,7 @@ li:last-child {
   padding: 16px 18px;
   text-decoration: none;
 }
-li a:hover {
+ a:hover {
   background-color: #FFF925;
   color: black;
 }
@@ -61,4 +64,26 @@ li a:hover {
   text-align: center;
   padding: 16px 18px;
   text-decoration: none;
+}
+
+
+.flex-container {
+  display: flex;
+  border-width: medium;
+  border-style: double;
+  border-color: gray;
+  padding: 30px;
+  flex-wrap:wrap;
+}
+
+
+.stand-alone-link {
+display: block;
+color: white;
+text-align: center;
+padding: 16px 18px;
+text-decoration: none;
+background-color: #830A0A;
+float: left;
+
 }
