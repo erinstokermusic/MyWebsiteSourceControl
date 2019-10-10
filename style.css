@@ -32,14 +32,9 @@ li:last-child {
 
 
 .main-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+display: flex;
   background-color: #830A0A;
-  position: fixed;
-  top: 0;
-  width: 100%;
+
 }
 
 .main-li {
