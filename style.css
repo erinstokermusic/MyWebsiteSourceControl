@@ -1,7 +1,30 @@
 
-@import url("https://fonts.google.com/specimen/Acme");
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Fascinate+Inline|Staatliches&display=swap');
+
+:root {
+  --navigationFont: 'Fascinate Inline',sans-serif;
+  --headingfont: Staatliches,sans-serif;
+  --paragraphFont: Boogaloo,sans-serif;
+
+}
+
+div {
+  font-family: var(--paragraphFont);
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--headingfont);
+  font-size: 2em;
+}
+
+p {
+  font-family: var(--paragraphFont);
+}
+
 img {
 width: 15%;
+
 }
 footer{
   background-color: #81817E;
@@ -10,17 +33,22 @@ footer{
 }
 
 .list-ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   width: 20%;
   background-color: #830A0A;
+  font-family: var(--navigationFont)
 }
 
 .list-li-a {
-  display: block;
+  display: flex;
+  justify-content: center;
   color: white;
-  padding: 8px 16px;
+  padding: 10px;
   text-decoration: none;
   text-align: center;
   border-bottom: 1px solid white;
@@ -32,20 +60,29 @@ li:last-child {
 
 
 .main-nav {
-display: flex;
+  height: 100%;
   background-color: #830A0A;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: var(--navigationFont);
+  font-size: 2em;
+  flex-wrap: wrap;
 
 }
 
-.main-li {
-  float: left;
-}
 .main-li-a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   color: white;
   text-align: center;
   padding: 16px 18px;
   text-decoration: none;
+
 }
  a:hover {
   background-color: #FFF925;
@@ -53,9 +90,9 @@ display: flex;
 }
 
 .active {
-  background-color: #DE6D2C;
+  color: #DE6D2C;
+  text-decoration: none;
   display: block;
-  color: white;
   text-align: center;
   padding: 16px 18px;
   text-decoration: none;
@@ -73,12 +110,24 @@ display: flex;
 
 
 .stand-alone-link {
-display: block;
+display: flex;
+justify-content: flex-start;
 color: white;
 text-align: center;
-padding: 16px 18px;
+padding: 0px;
+margin: 0px;
 text-decoration: none;
 background-color: #830A0A;
-float: left;
+font-family: var(--navigationFont)
 
+}
+
+
+.sr-only {
+position: absolute;
+top: auto;
+left: -10000px;
+width: 1px;
+height: 1px;
+overflow: hidden;
 }
