@@ -10,6 +10,7 @@
 
 * {
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 div {
@@ -17,13 +18,16 @@ div {
 
 }
 
-h1,h2,h3,h4,h5,h6 {
+h2,h3,h4,h5,h6 {
   font-family: var(--headingfont);
+color:#050505;
 }
 
 h1 {
     font-size: 1.75em;
+      font-family: var(--headingfont);
     text-shadow: 0 0 10px #FFFFFF;
+
 }
 
 header {
@@ -33,6 +37,7 @@ header {
 
 p {
   font-family: var(--paragraphFont);
+color:#050505;
 }
 
 img {
@@ -128,7 +133,6 @@ border: 6px solid black;
   width: 100%;
   height: 100%;
   transition: width 2s, height 2s;
-
 }
 
 
@@ -159,18 +163,20 @@ border: 6px solid black;
 
 
 .stand-alone-link {
-display: flex;
-justify-content: flex-start;
-color: white;
-text-align: center;
-padding: 5px;
-margin: 0px;
-text-decoration: none;
-background-color: #830A0A;
-font-family: var(--navigationFont)
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 20%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: #830A0A;
+  font-family: var(--navigationFont)
 
 }
-
 
 .sr-only {
 position: absolute;
