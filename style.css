@@ -26,7 +26,8 @@ color:#050505;
 h1 {
     font-size: 1.75em;
       font-family: var(--headingfont);
-    text-shadow: 0 0 10px #FFFFFF;
+  text-shadow: 0 0 0 #FFFFFF;
+  transition: text-shadow 2s;
 
 }
 
@@ -185,4 +186,10 @@ left: -10000px;
 width: 1px;
 height: 1px;
 overflow: hidden;
+}
+
+
+.main-nav-heading:hover {
+      text-shadow: 0 0 10px #FFFFFF;
+      transition: text-shadow 2s;
 }
