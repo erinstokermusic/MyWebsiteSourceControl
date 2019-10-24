@@ -27,7 +27,7 @@ h1 {
     font-size: 1.75em;
       font-family: var(--headingfont);
   text-shadow: 0 0 0 #FFFFFF;
-  transition: text-shadow 2s;
+  transition: text-shadow 4s;
 
 }
 
@@ -191,5 +191,5 @@ overflow: hidden;
 
 .main-nav-heading:hover {
       text-shadow: 0 0 10px #FFFFFF;
-      transition: text-shadow 2s;
+      transition: text-shadow 1s;
 }
