@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Boogaloo|Fascinate+Inline|Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Fascinate+Inline|Slackey|Staatliches&display=swap');
 
 :root {
   --navigationFont: 'Fascinate Inline',sans-serif;
@@ -24,8 +24,8 @@ color:#050505;
 }
 
 h1 {
-    font-size: 1.75em;
-      font-family: var(--headingfont);
+    font-size: 1.5em;
+      font-family: Slackey, var(--headingfont);
   text-shadow: 0 0 0 #FFFFFF;
   transition: text-shadow 4s;
 
@@ -148,7 +148,6 @@ border: 6px solid black;
   text-align: center;
   margin: 0px;
   box-sizing: border-box;
-
 }
 
 
