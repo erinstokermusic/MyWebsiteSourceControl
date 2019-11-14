@@ -208,7 +208,12 @@ width: 40%;
 }
 
 .gridmain {
-grid-area: gridmain; 
+grid-area: gridmain;
+}
+
+.gridbg {
+  width: 100%;
+  height: 20%;
 }
 
 .homegrid {
@@ -220,5 +225,5 @@ grid-area: gridmain;
   grid-template-areas:
   ". . ."
   ". gridmain ."
-  ". . .";
+  ". gridbottom .";
 }
