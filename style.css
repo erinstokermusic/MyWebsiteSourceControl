@@ -227,3 +227,7 @@ grid-area: gridmain;
   ". gridmain ."
   ". gridbottom .";
 }
+
+.myface {
+  border-radius: 50px;
+}
