@@ -223,6 +223,7 @@ grid-template-columns: repeat(4,1fr);
 
 .abt2 {
   grid-area: abt2;
+  text-align: right;
 }
 
 .abt3 {
@@ -235,6 +236,7 @@ grid-template-columns: repeat(4,1fr);
 
 .abt5 {
   grid-area: abt5;
+  text-align: center;
 }
 
 #aboutmain {
@@ -245,8 +247,8 @@ grid-template-columns: repeat(4,1fr);
   grid-column-gap: 5%;
   grid-template-areas:
   '. abt5 .'
-  'abt1 myface abt2'
-  'abt3 . abt4';
+  'abt1 myface abt3'
+  'abt2 . abt4';
 
   position: relative;
 }
@@ -318,6 +320,38 @@ grid-template-columns: repeat(4,1fr);
     grid-area: myface;
     margin: 3%;
     position: absolute;
-    left: 25%;
+    left: 22%;
   }
+}
+
+@media only screen and (min-width:600px) {
+  #aboutmain {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    '. abt5 .'
+    '. myface .'
+    'abt1 . abt3'
+    'abt2 . abt4'
+    ;
+
+    position: relative;
+  }
+  .abt2 {
+    grid-area: abt2;
+    text-align: right;
+    margin: 4%;
+  }
+
+  .myface {
+    border-radius: 50px;
+    width: 60%;
+    grid-area: myface;
+    margin: 3%;
+    position: absolute;
+    left: 18%;
+  }
+
 }
