@@ -250,3 +250,22 @@ grid-template-columns: repeat(4,1fr);
 
   position: relative;
 }
+
+@media only screen and (max-width:600px){
+  #aboutmain {
+    height: 500vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-template-areas:
+    'myface'
+    'abt5'
+    'abt1'
+    'abt2'
+    'abt3'
+    'abt4';
+
+    position: relative;
+  }
+}
