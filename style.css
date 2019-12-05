@@ -252,8 +252,9 @@ grid-template-columns: repeat(4,1fr);
 }
 
 @media only screen and (max-width:600px){
+
   #aboutmain {
-    height: 500vh;
+    height: 200vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -267,5 +268,56 @@ grid-template-columns: repeat(4,1fr);
     'abt4';
 
     position: relative;
+  }
+  .abt1 {
+    grid-area: abt1;
+    text-align: center;
+    margin: 0;
+
+  }
+  .abt2 {
+    grid-area: abt2;
+    text-align: center;
+    margin: 0;
+  }
+
+  .abt3 {
+    grid-area: abt3;
+    text-align: center;
+    margin: 0;
+  }
+
+  .abt4 {
+    grid-area: abt4;
+    text-align: center;
+    margin: 0;
+  }
+
+  .abt5 {
+    grid-area: abt5;
+    text-align: center;
+        margin: 10%;
+  }
+  .main-nav {
+    height: 100%;
+    background-color: #830A0A;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: var(--navigationFont);
+    font-size: 1.25em;
+    flex-wrap: wrap;
+
+  }
+  .myface {
+    border-radius: 50px;
+    width: 50%;
+    grid-area: myface;
+    margin: 3%;
+    position: absolute;
+    left: 25%;
   }
 }
