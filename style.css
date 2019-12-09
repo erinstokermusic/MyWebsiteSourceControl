@@ -239,6 +239,20 @@ grid-template-columns: repeat(4,1fr);
   text-align: center;
 }
 
+.mainh2 {
+  grid-area: mainh2;
+  text-align: center;
+  font-size: 3em;
+}
+
+.desc {
+  grid-area: desc;
+  text-align: center;
+  color: #830A0A;
+}
+
+
+
 #aboutmain {
   height: 100vh;
   display: grid;
@@ -255,7 +269,17 @@ grid-template-columns: repeat(4,1fr);
 
 #indexmain {
   height: 100vh;
+  width: 100vw;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+'. . .'
+'. mainh2 .'
+'. desc .';
+background-image: url(istockphoto-907437998-170x170.jpg);
+background-size: cover;
+background-blend-mode: luminosity;
 }
 
 @media only screen and (max-width:600px){
@@ -348,6 +372,37 @@ grid-template-columns: repeat(4,1fr);
     grid-area: abt2;
     text-align: right;
     margin: 4%;
+  }
+
+  .myface {
+    border-radius: 50px;
+    width: 60%;
+    grid-area: myface;
+    margin: 3%;
+    position: absolute;
+    left: 18%;
+  }
+
+}
+
+@media only screen and (min-width:768px) {
+  #aboutmain {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    '. abt5 .'
+    'abt1 myface abt3'
+    'abt2 . abt4'
+    ;
+
+    position: relative;
+  }
+  .abt5 {
+    grid-area: abt5;
+    text-align: center;
+    margin: 10%;
   }
 
   .myface {
