@@ -16,7 +16,9 @@
 }
 
 body{
-  background-color: #FEFEFE;
+  background-image: url(istockphoto-504240773-612x612.jpg);
+  background-size: cover;
+  background-blend-mode: luminosity;
 }
 
 div {
@@ -245,16 +247,42 @@ grid-template-columns: repeat(4,1fr);
   font-size: 3em;
 }
 
-.desc {
-  grid-area: desc;
+.desc1 {
+  grid-area: desc1;
+  text-align: center;
+  color: #350000;
+  font-size: 2em;
+}
+
+.desc2 {
+  grid-area: desc2;
+  text-align: center;
+  color: #5C0000;
+  font-size: 2em;
+}
+
+.desc3 {
+  grid-area: desc3;
   text-align: center;
   color: #830A0A;
+  font-size: 2em;
+}
+
+.desc4 {
+  grid-area: desc4;
+  text-align: center;
+  color: #A62525;
+  font-size: 2em;
 }
 
 
 
 #aboutmain {
   height: 100vh;
+  width: 50vw;
+background-color: white;
+box-shadow: 4px 5px 19px -1px #190000;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 30% 1fr 1fr;
@@ -263,20 +291,21 @@ grid-template-columns: repeat(4,1fr);
   '. abt5 .'
   'abt1 myface abt3'
   'abt2 . abt4';
-
   position: relative;
 }
 
 #indexmain {
-  height: 100vh;
+  height: 300vh;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-'. . .'
 '. mainh2 .'
-'. desc .';
+'. desc1 .'
+'. desc2 .'
+'. desc3 .'
+'. desc4 .';
 background-image: url(istockphoto-907437998-170x170.jpg);
 background-size: cover;
 background-blend-mode: luminosity;
@@ -286,6 +315,7 @@ background-blend-mode: luminosity;
 
   #aboutmain {
     height: 200vh;
+      width: 80vw;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -303,31 +333,31 @@ background-blend-mode: luminosity;
   .abt1 {
     grid-area: abt1;
     text-align: center;
-    margin: 0;
+    margin: 10%;
 
   }
   .abt2 {
     grid-area: abt2;
     text-align: center;
-    margin: 0;
+    margin: 10%;
   }
 
   .abt3 {
     grid-area: abt3;
     text-align: center;
-    margin: 0;
+    margin: 10%;
   }
 
   .abt4 {
     grid-area: abt4;
     text-align: center;
-    margin: 0;
+    margin: 10%;
   }
 
   .abt5 {
     grid-area: abt5;
     text-align: center;
-        margin: 10%;
+        margin-top: 30%;
   }
   .main-nav {
     height: 100%;
@@ -349,21 +379,51 @@ background-blend-mode: luminosity;
     grid-area: myface;
     margin: 3%;
     position: absolute;
-    left: 22%;
+    left: 20%;
+  }
+
+  .abt1 {
+    grid-area: abt1;
+    text-align: center;
+
+  }
+  .abt2 {
+    grid-area: abt2;
+    text-align: center;
+
+  }
+
+  .abt3 {
+    grid-area: abt3;
+    text-align: center;
+
+  }
+
+  .abt4 {
+    grid-area: abt4;
+    text-align: center;
+
+  }
+
+  .abt5 {
+    grid-area: abt5;
+    text-align: center;
+        margin-top: 30%;
   }
 }
 
 @media only screen and (min-width:600px) {
   #aboutmain {
-    height: 100vh;
+    height: 200vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     '. abt5 .'
     '. myface .'
     'abt1 . abt3'
-    'abt2 . abt4'
+    '. . abt4'
+    'abt2 . .'
     ;
 
     position: relative;
@@ -376,18 +436,18 @@ background-blend-mode: luminosity;
 
   .myface {
     border-radius: 50px;
-    width: 60%;
+    width: 100%;
     grid-area: myface;
     margin: 3%;
     position: absolute;
-    left: 18%;
+    left: 20%;
   }
 
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:1000px) {
   #aboutmain {
-    height: 100vh;
+    height: 200vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -399,11 +459,6 @@ background-blend-mode: luminosity;
 
     position: relative;
   }
-  .abt5 {
-    grid-area: abt5;
-    text-align: center;
-    margin: 10%;
-  }
 
   .myface {
     border-radius: 50px;
@@ -413,5 +468,38 @@ background-blend-mode: luminosity;
     position: absolute;
     left: 18%;
   }
+  .abt1 {
+    grid-area: abt1;
+    text-align: center;
+    margin: 10%;
+    font-size: .5em;
 
+  }
+  .abt2 {
+    grid-area: abt2;
+    text-align: center;
+    margin: 10%;
+    font-size: .5em;
+  }
+
+  .abt3 {
+    grid-area: abt3;
+    text-align: center;
+    margin: 10%;
+    font-size: .5em;
+  }
+
+  .abt4 {
+    grid-area: abt4;
+    text-align: center;
+    margin: 10%;
+    font-size: .5em;
+  }
+
+  .abt5 {
+    grid-area: abt5;
+    text-align: center;
+        margin-top: 30%;
+        font-size: .5em;
+  }
 }
