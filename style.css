@@ -275,6 +275,13 @@ grid-template-columns: repeat(4,1fr);
   font-size: 2em;
 }
 
+#infomain {
+  height: 300vh;
+  width: 80vw;
+background-color: white;
+box-shadow: 4px 5px 19px -1px #190000;
+  margin: auto;
+}
 
 
 #aboutmain {
@@ -412,42 +419,81 @@ background-blend-mode: luminosity;
   }
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:600px) and (max-width:1000px) {
   #aboutmain {
-    height: 200vh;
+    height: 150vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    '. abt5 .'
-    '. myface .'
-    'abt1 . abt3'
-    '. . abt4'
-    'abt2 . .'
+    'abt5 abt5 . myface myface'
+    'abt1 abt1 abt1 abt3 abt3'
+    'abt2 abt2 abt2 abt4 .'
     ;
 
     position: relative;
   }
+  .abt1 {
+    grid-area: abt1;
+    text-align: center;
+    margin: 5%;
+    font-size: 1em;
+
+  }
   .abt2 {
     grid-area: abt2;
-    text-align: right;
-    margin: 4%;
+    text-align: center;
+    margin: 5%;
+    font-size: 1em;
+  }
+
+  .abt3 {
+    grid-area: abt3;
+    text-align: center;
+    margin: 5%;
+    font-size: 1em;
+  }
+
+  .abt4 {
+    grid-area: abt4;
+    text-align: center;
+    margin: 5%;
+    font-size: 1em;
+  }
+
+  .abt5 {
+    grid-area: abt5;
+    text-align: center;
+        margin: 5%;
+        font-size: 1em;
   }
 
   .myface {
     border-radius: 50px;
-    width: 100%;
+    width: 60%;
     grid-area: myface;
-    margin: 3%;
+    margin: 5%;
     position: absolute;
-    left: 20%;
-  }
-
+    left: 18%;
+}
+  .main-nav {
+    height: 100%;
+    background-color: #830A0A;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: var(--navigationFont);
+    font-size: 1.25em;
+    flex-wrap: wrap;
 }
 
 @media only screen and (min-width:1000px) {
   #aboutmain {
-    height: 200vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -464,42 +510,42 @@ background-blend-mode: luminosity;
     border-radius: 50px;
     width: 60%;
     grid-area: myface;
-    margin: 3%;
+    margin: 5%;
     position: absolute;
     left: 18%;
   }
   .abt1 {
     grid-area: abt1;
     text-align: center;
-    margin: 10%;
-    font-size: .5em;
+    margin: 5%;
+    font-size: .85em;
 
   }
   .abt2 {
     grid-area: abt2;
     text-align: center;
-    margin: 10%;
-    font-size: .5em;
+    margin: 5%;
+    font-size: .85em;
   }
 
   .abt3 {
     grid-area: abt3;
     text-align: center;
-    margin: 10%;
-    font-size: .5em;
+    margin: 5%;
+    font-size: .85em;
   }
 
   .abt4 {
     grid-area: abt4;
     text-align: center;
-    margin: 10%;
-    font-size: .5em;
+    margin: 5%;
+    font-size: .85em;
   }
 
   .abt5 {
     grid-area: abt5;
     text-align: center;
-        margin-top: 30%;
-        font-size: .5em;
+        margin-top:5%;
+        font-size: .85em;
   }
 }
