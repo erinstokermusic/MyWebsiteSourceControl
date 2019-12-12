@@ -275,12 +275,30 @@ grid-template-columns: repeat(4,1fr);
   font-size: 2em;
 }
 
+
+
+
+
+
+
 #infomain {
   height: 300vh;
   width: 80vw;
 background-color: white;
 box-shadow: 4px 5px 19px -1px #190000;
   margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(8,1fr);
+  grid-template-areas:
+  '. . . .'
+  '. . . .'
+  '. . . .'
+  '. . . .'
+  '. . . .'
+  '. . . .'
+  '. . . .'
+  '. . . .';
 }
 
 
